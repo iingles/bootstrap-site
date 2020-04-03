@@ -1,21 +1,61 @@
+.html {
+  font-size: 62.5%;
+}
 .clear {
-  clear: both; }
-
+  clear: both;
+}
 nav {
   float: left;
   color: #FF0000;
-  font-family: Helvetica, sans-serif; }
-  nav ul li ul.sub-nav {
-    display: none; }
-
+  font-family: Helvetica, sans-serif;
+}
+nav ul li ul.sub-nav {
+  display: none;
+}
 .box {
   width: 200px;
   height: 200px;
-  background: red; }
-
+  background: red;
+}
 .box2 {
   width: 200px;
   height: 200px;
-  background: gray; }
-
+  background: gray;
+}
 /*# sourceMappingURL=main.css.map */
+.hero {
+  display: flex;
+  background: url('../images/beach.jpg') no-repeat;
+  height: 100vh;
+  text-align: center;
+  align-items: flex-end;
+}
+.hero h1 {
+  font-size: 5.1rem;
+  color: #fff;
+}
+.jumbotron {
+  border-radius: none;
+  margin: 0;
+}
+.container {
+  display: flex;
+}
+.dropdown-toggle {
+  border-right: 1px solid #90722C;
+}
+.btn-primary {
+  color: #fff !important;
+  background-color: #90722C;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #47370f;
+}
+.btn-outline-primary {
+  color: #fff !important;
+  border-color: #90722C;
+}
+.btn-outline-primary:hover {
+  background-color: #90722C;
+}
