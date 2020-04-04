@@ -1,50 +1,161 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Bootstrap 4</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>Bootstrap 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!-- <link href="img/favicon.png" type="img/png" rel="icon"> -->
-	<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
-	<link href="css/index.css" type="text/css" rel="stylesheet">
-</head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light container-fluid">	
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-		aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarNavDropdown">
-		<ul class="navbar-nav">
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					MENU
-				</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-					<a class="dropdown-item" href="#">Action</a>
-					<a class="dropdown-item" href="#">Another action</a>
-					<a class="dropdown-item" href="#">Something else here</a>
-				</div>
-			</li>
-		</ul>
-	</div>
-	<a class="navbar-brand" href="#">Spa</a>
-	<a class="btn btn-primary">Reserve A Room</a>
-</nav>
-<section class="jumbotron hero">
-	<div class="container">
-		<h1>Relax, get some space.</h1>
-		<a class="btn btn-outline-primary">Plan your next getaway.</a>
-	</div>
-</section>
-<section class="jumbotron">
-	<div class="container">
-		
-	</div>
-</section>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
-
-</body>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+	<link href="css/index.css" type="text/css" rel="stylesheet" />
+	<script src="https://kit.fontawesome.com/2f8e0f4e45.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top bg-light container-fluid"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              MENU
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <a class="navbar-brand" href="#">Spa</a>
+      <a class="btn btn-primary">Reserve A Room</a>
+    </nav>
+    <section class="jumbotron hero d-flex">
+      <div class="container">
+        <h1>Relax, get some space.</h1>
+        <a class="btn btn-outline-primary">Plan your next getaway.</a>
+      </div>
+    </section>
+    <section class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-lg-8">
+            <img
+              src="./images/white-outdoor-lounge-chairs.jpg"
+              class="img-fluid"
+              alt="Photo of white outdoor lounge chairs"
+            />
+          </div>
+          <div class="col-12 col-sm-12 col-lg-4">
+            <img
+              src="./images/two-white-bottles-beside-potted-plant-on-bathtub.jpg"
+              class="img-fluid"
+              alt="Photo of two white bottles beside potted plant on bathtub"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-lg-4 stories">
+            <h1>Relaxing Stories</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="col-12 col-sm-12 col-lg-2">
+            <img
+              src="./images/photo-of-person-s-hand-soak-in-water.jpg"
+              class="img-fluid"
+              alt="Photo of a person's hand soaking in water"
+            />
+          </div>
+          <div class="col-12 col-sm-12 col-lg-2">
+            <img
+              src="./images/photo-of-woman-getting-a-back-massage.jpg"
+              class="img-fluid"
+              alt="Photo of a woman getting a back massage"
+            />
+          </div>
+          <div class="col-12 col-sm-12 col-lg-2">
+            <img
+              src="./images/woman-doing-facial-mask.jpg"
+              class="img-fluid"
+              alt="Photo of a woman getting a facial mask"
+            />
+          </div>
+          <div class="col-12 col-sm-12 col-lg-2">
+            <img
+              src="./images/woman-having-facial-care.jpg"
+              class="img-fluid"
+              alt="Photo of a woman having facial care"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div
+        class="container-fluid footer-links justify-content-center d-flex p-3"
+      >
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="" class="last">Link</a>
+      </div>
+      <div class="container-fluid footer-bottom p-5 justify-content-center">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <p>
+              Newsletter Subscription &amp; Special Offers
+            </p>
+            <a href="" class="btn btn-secondary">subscribe</a>
+          </div>
+          <div class="col-12 col-lg-4">
+            Spa!
+          </div>
+          <div class="col-12 col-lg-4">
+            <p>CONNECT WITH US</p>
+            <p>
+              THE GRAND AMERICA HOTEL 555 SOUTH MAIN STREET SALT LAKE CITY, UT
+              84111
+            </p>
+            <p>RESERVATIONS: 800-304-8696 LOCAL: 801-258-6000</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
 </html>

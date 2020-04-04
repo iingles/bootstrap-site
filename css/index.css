@@ -24,7 +24,6 @@ nav ul li ul.sub-nav {
 }
 /*# sourceMappingURL=main.css.map */
 .hero {
-  display: flex;
   background: url('../images/beach.jpg') no-repeat;
   height: 100vh;
   text-align: center;
@@ -38,8 +37,26 @@ nav ul li ul.sub-nav {
   border-radius: none;
   margin: 0;
 }
-.container {
-  display: flex;
+.main-footer {
+  color: #fff;
+}
+.main-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-links {
+  background-color: #90722C;
+}
+.footer-links a {
+  text-transform: uppercase;
+  border-right: 1px solid #fff;
+  padding: 0.5rem 1rem;
+}
+.footer-links a.last {
+  border-right: none;
+}
+.footer-bottom {
+  background-color: #47370f;
 }
 .dropdown-toggle {
   border-right: 1px solid #90722C;
@@ -58,4 +75,13 @@ nav ul li ul.sub-nav {
 }
 .btn-outline-primary:hover {
   background-color: #90722C;
+}
+.btn-secondary {
+  background-color: #fff;
+  color: #90722C !important;
+  border: none;
+}
+.btn-secondary:hover {
+  background-color: #90722C;
+  color: #fff;
 }

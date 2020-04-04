@@ -1,5 +1,4 @@
 .hero {
-  display: flex;
   background: url('../images/beach.jpg') no-repeat;
   height: 100vh;
   text-align: center;
@@ -17,6 +16,30 @@
     margin: 0;
 }
 
-.container {
-    display: flex;
+.main-footer {
+  color: #fff;
+  
+  a {
+    color: #fff;
+    text-decoration: none;    
+  }
+}
+
+.footer-links {
+  background-color: @primary;
+  
+  a {
+    text-transform: uppercase;
+    border-right: 1px solid #fff;
+    padding: .5rem 1rem;
+  }
+
+  a.last {
+    border-right: none;
+  }
+}
+
+.footer-bottom {
+  background-color: @primary-darken;
+
 }
