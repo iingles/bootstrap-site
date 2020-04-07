@@ -117,12 +117,16 @@ nav ul li ul.sub-nav {
   color: #90722C !important;
   border: 1px solid #90722C !important;
 }
+.card .card-img-overlay .btn-outline-secondary:hover {
+  color: #fff !important;
+}
 @media screen and (min-width: 992px) {
   .card .card-img-overlay {
     top: 0;
     left: 0;
     opacity: 0;
     text-align: left;
+    color: #fff !important;
   }
   .card .card-img-overlay h1 {
     font-size: 4.2rem;
@@ -131,8 +135,12 @@ nav ul li ul.sub-nav {
     border-bottom: 1px solid #fff;
   }
   .card .card-img-overlay .btn-outline-secondary {
-    color: #90722C;
-    border: #90722C;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+  }
+  .card .card-img-overlay .btn-outline-secondary:hover {
+    color: #fff !important;
+    border: 1px solid #90722C !important;
   }
 }
 .card:hover .card-img-overlay {
@@ -193,6 +201,7 @@ nav ul li ul.sub-nav {
   border-color: #90722C;
 }
 .btn-outline-primary:hover {
+  color: #fff;
   background-color: #90722C;
 }
 .btn-secondary {
