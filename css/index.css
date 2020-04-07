@@ -37,6 +37,42 @@ nav ul li ul.sub-nav {
   border-radius: none;
   margin: 0;
 }
+.card {
+  border: none;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 1000px) {
+  .card {
+    margin-bottom: none;
+  }
+}
+.card .card-color-overlay {
+  transition: 0.5s ease;
+  opacity: 0;
+  background-color: #90722C;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.card .card-img-overlay {
+  opacity: 0;
+}
+@media screen and (min-width: 1000px) {
+  .card .card-img-overlay h1 {
+    font-size: 4.2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #fff;
+  }
+}
+.card:hover .card-img-overlay {
+  opacity: 1;
+}
+.card:hover .card-color-overlay {
+  opacity: 0.75;
+}
 .main-footer {
   color: #fff;
 }
@@ -58,7 +94,8 @@ nav ul li ul.sub-nav {
 .footer-bottom {
   background-color: #47370f;
 }
-.dropdown-toggle {
+.nav-link .top-menu {
+  padding-right: 1.5rem;
   border-right: 1px solid #90722C;
 }
 .btn-primary {
@@ -84,4 +121,12 @@ nav ul li ul.sub-nav {
 .btn-secondary:hover {
   background-color: #90722C;
   color: #fff;
+}
+.btn-outline-secondary {
+  color: #fff !important;
+  border-color: #fff;
+}
+.btn-outline-secondary:hover {
+  background-color: #47370f;
+  border-color: #90722C;
 }

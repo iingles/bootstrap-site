@@ -16,6 +16,53 @@
     margin: 0;
 }
 
+.card {
+  border: none;
+  margin-bottom: 2rem;
+
+  @media screen and (min-width: 1000px) {
+    margin-bottom: none;
+  }
+
+  .card-color-overlay {
+    transition: 0.5s ease;
+    opacity: 0;
+    background-color: @primary;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .card-img-overlay {
+    opacity: 0;
+
+    @media screen and (min-width:1000px) {
+        h1 {
+        font-size: 4.2rem;
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #fff;
+      }
+    }
+    
+  }
+}
+
+.card:hover  {
+  .card-img-overlay {
+    opacity: 1;
+  }
+
+  .card-color-overlay {
+    opacity: 0.75;
+  }
+  
+}
+
+
+
 .main-footer {
   color: #fff;
   
@@ -41,5 +88,4 @@
 
 .footer-bottom {
   background-color: @primary-darken;
-
 }
