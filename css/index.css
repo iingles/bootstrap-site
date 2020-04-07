@@ -79,16 +79,17 @@ nav ul li ul.sub-nav {
 }
 .card {
   border: none;
-  margin-bottom: 2rem;
+  margin-bottom: 15rem;
   max-height: 300px;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 992px) {
   .card {
     margin-bottom: none;
     max-height: 100%;
   }
 }
 .card .card-color-overlay {
+  display: none;
   transition: 0.5s ease;
   opacity: 0;
   background-color: #90722C;
@@ -98,18 +99,40 @@ nav ul li ul.sub-nav {
   height: 100%;
   width: 100%;
 }
+@media screen and (min-width: 992px) {
+  .card .card-color-overlay {
+    display: inline-block;
+  }
+}
 .card .card-img {
   overflow: hidden;
 }
 .card .card-img-overlay {
-  opacity: 0;
+  top: 19rem;
+  color: #000;
+  opacity: 1;
+  text-align: center;
 }
-@media screen and (min-width: 1000px) {
+.card .card-img-overlay .btn-outline-secondary {
+  color: #90722C !important;
+  border: 1px solid #90722C !important;
+}
+@media screen and (min-width: 992px) {
+  .card .card-img-overlay {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    text-align: left;
+  }
   .card .card-img-overlay h1 {
     font-size: 4.2rem;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid #fff;
+  }
+  .card .card-img-overlay .btn-outline-secondary {
+    color: #90722C;
+    border: #90722C;
   }
 }
 .card:hover .card-img-overlay {

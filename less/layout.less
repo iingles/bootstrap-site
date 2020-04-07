@@ -63,15 +63,16 @@
 
 .card {
   border: none;
-  margin-bottom: 2rem;
+  margin-bottom: 15rem;
   max-height: 300px;
   
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 992px) {
     margin-bottom: none;
     max-height: 100%;
   }
 
   .card-color-overlay {
+    display: none;
     transition: 0.5s ease;
     opacity: 0;
     background-color: @primary;
@@ -80,22 +81,46 @@
     left: 0;
     height: 100%;
     width: 100%;
+
+    @media screen and (min-width: 992px) {
+      display: inline-block;
+    }
   }
 
   .card-img {
     overflow: hidden;
   }
 
-  .card-img-overlay {
-    opacity: 0;
 
-    @media screen and (min-width:1000px) {
+  .card-img-overlay {
+    top: 19rem;
+    color: #000;
+    opacity: 1;
+    text-align: center;
+
+    .btn-outline-secondary {
+      color: @primary!important;
+      border: 1px solid @primary!important;
+    }
+    
+
+    @media screen and (min-width: 992px) {
+        top: 0;
+        left: 0;
+        opacity: 0;
+        text-align: left;
+
         h1 {
         font-size: 4.2rem;
         margin-bottom: 2rem;
         padding-bottom: 2rem;
         border-bottom: 1px solid #fff;
       }
+
+        .btn-outline-secondary {
+          color: @primary;
+          border: @primary;
+        }
     }
     
   }
