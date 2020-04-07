@@ -59,15 +59,33 @@ nav ul li ul.sub-nav {
 }
 .jumbotron {
   border-radius: none;
+  margin: 0 0 1.5rem 0;
+  padding: 2rem 0;
+}
+@media screen and (min-width: 992px) {
+  .jumbotron {
+    padding: 2rem 1rem;
+  }
+}
+.reserve {
+  max-height: 30rem;
   margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 992px) {
+  .reserve {
+    padding: 0 15px;
+  }
 }
 .card {
   border: none;
   margin-bottom: 2rem;
+  max-height: 300px;
 }
 @media screen and (min-width: 1000px) {
   .card {
     margin-bottom: none;
+    max-height: 100%;
   }
 }
 .card .card-color-overlay {
@@ -79,6 +97,9 @@ nav ul li ul.sub-nav {
   left: 0;
   height: 100%;
   width: 100%;
+}
+.card .card-img {
+  overflow: hidden;
 }
 .card .card-img-overlay {
   opacity: 0;
