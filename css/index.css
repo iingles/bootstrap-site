@@ -61,6 +61,7 @@ nav ul li ul.sub-nav {
   border-radius: none;
   margin: 0 0 1.5rem 0;
   padding: 2rem 0;
+  background-color: #fff;
 }
 @media screen and (min-width: 992px) {
   .jumbotron {
