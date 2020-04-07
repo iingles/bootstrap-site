@@ -151,9 +151,11 @@ nav ul li ul.sub-nav {
 .footer-bottom .bottom-logo {
   width: 25%;
 }
-.top-menu {
-  padding-right: 1.5rem;
-  border-right: 1px solid #90722C;
+@media screen and (min-width: 992px) {
+  .top-menu {
+    padding-right: 1.5rem;
+    border-right: 1px solid #90722C;
+  }
 }
 .btn-primary {
   color: #fff !important;
