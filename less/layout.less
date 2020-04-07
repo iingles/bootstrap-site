@@ -1,12 +1,34 @@
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-collapse {
-    max-width: 15%;
+
+.navbar-expand-lg  {
+
+  @media screen and (min-width: 992px) {
+    display: flex;
   }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-collapse {     
+
+    @media screen and (min-width: 992px) {
+      
+      max-width: 15%;
+    }
+
+  }  
 }
+
 .navbar-brand {
-  width: 15rem;
-  align-self: center;
-  margin: 0 1rem;
+  display: none;
+
+  @media screen and (min-width: 992px) {
+    display: inline-block;
+    width: 15rem;
+    align-self: center;
+    margin: 0 1rem;
+  }
+ 
 }
 
 .hero {
@@ -85,16 +107,26 @@
 
 .footer-links {
   background-color: @primary;
+  flex-direction: column;
   
   a {
     text-transform: uppercase;
-    border-right: 1px solid #fff;
-    padding: .5rem 1rem;
   }
 
-  a.last {
-    border-right: none;
+  @media screen and (min-width: 920px) {
+    flex-direction: row;
+
+    a {
+      text-transform: uppercase;
+      border-right: 1px solid #fff;
+      padding: .5rem 1rem;
+    }
+
+    a.last {
+      border-right: none;
+    }
   }
+  
 }
 
 .footer-bottom {

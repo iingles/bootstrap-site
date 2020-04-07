@@ -23,15 +23,29 @@ nav ul li ul.sub-nav {
   background: gray;
 }
 /*# sourceMappingURL=main.css.map */
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
+  .navbar-expand-lg {
+    display: flex;
+  }
+}
+.navbar-expand-lg .navbar-toggler {
+  border: none;
+}
+@media screen and (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
     max-width: 15%;
   }
 }
 .navbar-brand {
-  width: 15rem;
-  align-self: center;
-  margin: 0 1rem;
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .navbar-brand {
+    display: inline-block;
+    width: 15rem;
+    align-self: center;
+    margin: 0 1rem;
+  }
 }
 .hero {
   background: url('../images/beach.jpg') no-repeat;
@@ -92,14 +106,23 @@ nav ul li ul.sub-nav {
 }
 .footer-links {
   background-color: #90722C;
+  flex-direction: column;
 }
 .footer-links a {
   text-transform: uppercase;
-  border-right: 1px solid #fff;
-  padding: 0.5rem 1rem;
 }
-.footer-links a.last {
-  border-right: none;
+@media screen and (min-width: 920px) {
+  .footer-links {
+    flex-direction: row;
+  }
+  .footer-links a {
+    text-transform: uppercase;
+    border-right: 1px solid #fff;
+    padding: 0.5rem 1rem;
+  }
+  .footer-links a.last {
+    border-right: none;
+  }
 }
 .footer-bottom {
   background-color: #47370f;
