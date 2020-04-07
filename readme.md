@@ -1,6 +1,6 @@
 # Bootstrap Project
 
-## Spa Website
+## Calm Mind Spa Website
 
 ### For DGM 2780
 

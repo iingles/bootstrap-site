@@ -23,6 +23,16 @@ nav ul li ul.sub-nav {
   background: gray;
 }
 /*# sourceMappingURL=main.css.map */
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    max-width: 15%;
+  }
+}
+.navbar-brand {
+  width: 15rem;
+  align-self: center;
+  margin: 0 1rem;
+}
 .hero {
   background: url('../images/beach.jpg') no-repeat;
   height: 100vh;
@@ -94,7 +104,10 @@ nav ul li ul.sub-nav {
 .footer-bottom {
   background-color: #47370f;
 }
-.nav-link .top-menu {
+.footer-bottom .bottom-logo {
+  width: 25%;
+}
+.top-menu {
   padding-right: 1.5rem;
   border-right: 1px solid #90722C;
 }
@@ -120,7 +133,7 @@ nav ul li ul.sub-nav {
 }
 .btn-secondary:hover {
   background-color: #90722C;
-  color: #fff;
+  color: #fff !important;
 }
 .btn-outline-secondary {
   color: #fff !important;
