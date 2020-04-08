@@ -204,6 +204,7 @@ nav ul li ul.sub-nav {
 .btn-outline-primary:hover {
   color: #fff;
   background-color: #90722C;
+  border-color: #90722C !important;
 }
 .btn-secondary {
   background-color: #fff;
@@ -220,5 +221,5 @@ nav ul li ul.sub-nav {
 }
 .btn-outline-secondary:hover {
   background-color: #47370f;
-  border-color: #90722C;
+  border-color: #90722C !important;
 }
