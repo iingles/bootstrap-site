@@ -23,6 +23,30 @@ nav ul li ul.sub-nav {
   background: gray;
 }
 /*# sourceMappingURL=main.css.map */
+.home .hero {
+  background: url('../images/beach.jpg') no-repeat;
+  height: 100vh;
+  text-align: center;
+  align-items: flex-end;
+}
+.home .hero h1 {
+  font-size: 5.1rem;
+  color: #fff;
+}
+.services .hero {
+  min-height: 300px;
+  background: url('../images/beach-bungalow-caribbean-jetty.jpg') no-repeat;
+}
+.services .section-header h1 {
+  margin: 1rem 0;
+  padding: 1rem 0;
+  color: #90722C;
+  border-bottom: 1px solid #90722C;
+}
+.services .section-header .desc {
+  color: #707070;
+  font-style: italic;
+}
 @media screen and (min-width: 992px) {
   .navbar-expand-lg {
     display: flex;
@@ -44,26 +68,11 @@ nav ul li ul.sub-nav {
     width: 15rem;
   }
 }
-.hero {
-  background: url('../images/beach.jpg') no-repeat;
-  height: 100vh;
-  text-align: center;
-  align-items: flex-end;
-}
-.hero h1 {
-  font-size: 5.1rem;
-  color: #fff;
-}
 .jumbotron {
-  border-radius: none;
+  border-radius: 0;
   margin: 0 0 1.5rem 0;
   padding: 2rem 0;
   background-color: #fff;
-}
-@media screen and (min-width: 992px) {
-  .jumbotron {
-    padding: 2rem 1rem;
-  }
 }
 .reserve {
   max-height: 30rem;
@@ -75,6 +84,17 @@ nav ul li ul.sub-nav {
     padding: 0 15px;
   }
 }
+.line-items {
+  list-style-type: none;
+  text-align: center;
+}
+.line-items h4 {
+  margin: 0 0 2rem 0;
+  padding: 1rem 0;
+  color: #90722C;
+  border-bottom: 1px solid #90722C;
+  text-transform: uppercase;
+}
 .card {
   border: none;
   margin-bottom: 15rem;
@@ -82,7 +102,7 @@ nav ul li ul.sub-nav {
 }
 @media screen and (min-width: 992px) {
   .card {
-    margin-bottom: none;
+    margin-bottom: 0;
     max-height: 100%;
   }
 }

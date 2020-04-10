@@ -25,27 +25,14 @@
  
 }
 
-.hero {
-  background: url('../images/beach.jpg') no-repeat;
-  height: 100vh;
-  text-align: center;
-  align-items: flex-end;
-
-  h1 {
-    font-size: 5.1rem;
-    color: #fff;
-  }
-}
-
-
 .jumbotron {
-    border-radius: none;
+    border-radius: 0;
     margin: 0 0 1.5rem 0;
     padding: 2rem 0;
     background-color: #fff;
 
     @media screen and (min-width: 992px) {
-      padding: 2rem 1rem;
+      
     }
 }
 
@@ -59,13 +46,27 @@
   }
 }
 
+.line-items {
+  list-style-type: none;
+  text-align: center;
+
+  h4 {    
+    margin: 0 0 2rem 0;
+    padding: 1rem 0;
+    color: @primary;
+    border-bottom: 1px solid @primary;
+    text-transform: uppercase;
+  }
+
+}
+
 .card {
   border: none;
   margin-bottom: 15rem;
   max-height: 300px;
   
   @media screen and (min-width: 992px) {
-    margin-bottom: none;
+    margin-bottom: 0;
     max-height: 100%;
   }
 
