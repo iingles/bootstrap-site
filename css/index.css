@@ -47,6 +47,25 @@ nav ul li ul.sub-nav {
   color: #707070;
   font-style: italic;
 }
+.about .hero {
+  background: url("../images/beach-pebbles.jpg") no-repeat;
+  min-height: 100vh;
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .about .hero {
+    padding-top: 20rem;
+  }
+}
+.about .hero h1 {
+  font-size: 4.2rem;
+  color: #fff;
+}
+@media screen and (min-width: 992px) {
+  .about .hero h1 {
+    font-size: 5.2rem;
+  }
+}
 @media screen and (min-width: 992px) {
   .navbar-expand-lg {
     display: flex;
