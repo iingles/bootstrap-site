@@ -9,3 +9,8 @@
 
 
 - Animations done with GreenSock
+
+[x] - The brand in the page header shifts to the left on load
+[x] - The H1 on the home page fades in on load
+[x] - The four "relaxing stories" images at the bottom of the home page raise up on hover
+[x] - Clicking on "Relaxing Stories" at the bottom of the home page triggers a spinning animation
